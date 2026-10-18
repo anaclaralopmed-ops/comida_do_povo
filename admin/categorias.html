@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Categorias</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main class="phone">
+
+    <header class="topbar">
+        <a class="back" href="../index.html">←</a>
+        Área da Administração
+    </header>
+
+    <nav class="admin-menu">
+        <a href="../index.html">Início</a>
+        <a href="login.html">Login</a>
+        <a href="../cadastro.html">Usuários</a>
+        <a href="categorias.html">Categorias</a>
+    </nav>
+
+    <section class="content register">
+        <h1>Cadastro de Categorias</h1>
+
+        <form class="form">
+            <label for="nome">Nome da categoria:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" name="descricao">
+
+            <button type="submit">Cadastrar Categoria</button>
+        </form>
+
+        <h2>Categorias cadastradas</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Categoria</th>
+                    <th>Descrição</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Pratos principais</td>
+                    <td>Refeições completas</td>
+                    <td>
+                        <button type="button">Editar</button>
+                        <button type="button">Apagar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Ana Clara Lopes Medina</p>
+        <a href="../autor.html">Sobre a autora</a>
+    </footer>
+
+</main>
+</body>
+</html>
