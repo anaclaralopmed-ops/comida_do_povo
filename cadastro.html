@@ -1,17 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Cadastro</title><link rel="stylesheet" href="style.css"></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Cadastro de Usuários</title><link rel="stylesheet" href="style.css"></head>
 <body><main class="phone">
-<header class="topbar"><a class="back" href="index.html">←</a>Área Cadastro Cliente</header>
-<section class="content register">
-<div class="profile-row"><div class="avatar"></div><div><h1>Preencha com seus<br>dados pessoais</h1><p>Esses dados serão usados para<br>entregas e agendamento de eventos</p></div></div>
-<form class="form">
-<label>Endereço:</label><input type="text">
-<label>Bairro:</label><input type="text">
-<label>Número:</label><input class="short" type="text"> <label style="display:inline;font-weight:normal;margin-left:8px">◯ Sem número</label>
-<label>Telefone:</label><input class="short" type="tel">
-<label style="margin-top:68px">Login:</label><input type="text">
-<label>Senha:</label><span class="password"><input class="short" type="password"><span class="eye">◉</span></span>
-</form></section>
-<nav class="bottom"><a href="index.html"><span class="ico">★</span>Sobre</a><a href="cardapio.html"><span class="ico">◉</span>Detalhes</a><a class="active" href="cadastro.html"><span class="ico">☆</span>Cadastro</a></nav>
-</main></body></html>
+<header class="topbar"><a class="back" href="index.html">←</a>Área da Administração</header>
+<nav class="admin menu"><a href= "index.html">início</a> <a href="admin/login.html">Login</a>
+        <a href="admin/usuarios.html">Usuários</a>
+        <a href="admin/categorias.html">Categorias</a>
+    </nav>  
+<section class="content register"><h1>Cadastro de Usuários</h1>
+
+        <form class="form">
+            <label for="nome">Nome completo:</label>
+            <input id="nome" type="text" required>
+
+            <label for="email">E-mail:</label>
+            <input id="email" type="email" required>
+
+            <label for="endereco">Endereço:</label>
+            <input id="endereco" type="text">
+
+            <label for="bairro">Bairro:</label>
+            <input id="bairro" type="text">
+
+            <label for="numero">Número:</label>
+            <input id="numero" type="text">
+
+            <label for="telefone">Telefone:</label>
+            <input id="telefone" type="tel">
+
+            <label for="login">Login:</label>
+            <input id="login" type="text" required>
+
+            <label for="senha">Senha:</label>
+            <input id="senha" type="password" required>
+
+            <button type="submit">Cadastrar Usuário</button>
+        </form>
+
+        <h2>Usuários cadastrados</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Login</th>
+                    <th>E-mail</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ana</td>
+                    <td>ana123</td>
+                    <td>ana@email.com</td>
+                    <td>
+                        <button type="button">Editar</button>
+                        <button type="button">Apagar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Ana Clara Lopes Medina</p>
+        <a href="autor.html">Sobre a autora</a>
+    </footer>
+
+</main>
+</body>
+</html>
+
